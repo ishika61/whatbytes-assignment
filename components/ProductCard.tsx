@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Product } from "@/lib/types";
 import { useCart } from "@/context/CartContext";
-// import StarRating from "./StarRating";
+import StarRating from "./StarRating";
 
 export default function ProductCard({ product }: { product: Product }) {
   const { addToCart } = useCart();
