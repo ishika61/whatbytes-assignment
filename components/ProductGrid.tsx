@@ -20,6 +20,6 @@ export default function ProductGrid({ products }: { products: Product[] }) {
           <ProductCard key={product.id} product={product} />
         )
       )}
-    {/* </div> */}
+    </div>
   );
 }
