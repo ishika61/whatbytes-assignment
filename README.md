@@ -5,7 +5,7 @@ A responsive e-commerce product listing app built with Next.js, TypeScript, and 
 
 ## Live Demo
 
-🔗 [https://your-project-name.vercel.app](https://your-project-name.vercel.app)
+🔗 whatbytes-assignment-coral.vercel.app
 
 ## Features
 
