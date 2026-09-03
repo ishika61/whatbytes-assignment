@@ -66,29 +66,37 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Project Structure
 
+## Project Structure
+
+```
 app/
-layout.tsx # Root layout with header/footer/cart provider
-page.tsx # Home page
-product/[id]/page.tsx # Product detail page (dynamic route)
-cart/page.tsx # Cart page
+├── layout.tsx                 # Root layout with Header, Footer & CartProvider
+├── page.tsx                   # Home page / Product Listing
+├── product/
+│   └── [id]/
+│       └── page.tsx           # Product Detail Page
+└── cart/
+    └── page.tsx               # Cart Page
+
 components/
-Header.tsx
-Footer.tsx
-Sidebar.tsx
-ProductCard.tsx
-FeaturedProductCard.tsx
-ProductGrid.tsx
-StarRating.tsx
-HomeContent.tsx
-ProductDetailClient.tsx
+├── Header.tsx                 # Header with search & cart
+├── Footer.tsx                 # Footer with social links
+├── Sidebar.tsx                # Category & price filters
+├── ProductCard.tsx            # Product card
+├── FeaturedProductCard.tsx    # Featured product card
+├── ProductGrid.tsx            # Product grid
+├── StarRating.tsx             # Product rating
+├── HomeContent.tsx            # Home page content
+└── ProductDetailClient.tsx    # Product detail interactions
+
 context/
-CartContext.tsx # Cart state + localStorage persistence
+└── CartContext.tsx            # Cart state & localStorage persistence
+
 data/
-products.ts # Product dataset
+└── products.ts                # Product dataset
+
 lib/
-types.ts # Shared TypeScript types
-
-
+└── types.ts                   # Shared TypeScript types
 
 ## Build for Production
 
