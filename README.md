@@ -5,7 +5,7 @@ A responsive e-commerce product listing app built with Next.js, TypeScript, and 
 
 ## Live Demo
 
-🔗 [https://your-project-name.vercel.app](https://your-project-name.vercel.app)
+🔗 https://whatbytes-assignment-coral.vercel.app/
 
 ## Features
 
@@ -51,7 +51,7 @@ A responsive e-commerce product listing app built with Next.js, TypeScript, and 
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/whatbytes-assignment.git
+git clone https://github.com/ishika61/whatbytes-assignment.git
 cd whatbytes-assignment
 npm install
 ```
