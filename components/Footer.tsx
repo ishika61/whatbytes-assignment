@@ -30,7 +30,12 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 sm:grid-cols-3">
         <div>
           <h4 className="mb-3 font-semibold">Filters</h4>
-          <p className="text-sm text-gray-300">All &nbsp; Electronics</p>
+        <ul className="space-y-1 text-sm text-gray-300">
+  <li>All</li>
+  <li>Electronics</li>
+  <li>Clothing</li>
+  <li>Home</li>
+</ul>
         </div>
         <div>
           <h4 className="mb-3 font-semibold">About Us</h4>
