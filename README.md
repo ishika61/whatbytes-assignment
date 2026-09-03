@@ -97,6 +97,7 @@ data/
 lib/
 └── types.ts                   # Shared TypeScript types
 
+```
 ## Build for Production
 
 ```bash
