@@ -16,11 +16,11 @@ export default function Sidebar({
   onMaxPriceChange,
 }: SidebarProps) {
   return (
-    <aside className="w-full shrink-0 rounded-lg bg-blue-800 p-5 text-white md:w-60">
-      <h2 className="mb-4 text-lg font-semibold">Filters</h2>
+<aside className="w-full shrink-0 self-start rounded-lg bg-[#0657A8] p-5 text-white md:w-60">
+      <h2 className="mb-4 text-xl font-bold">Filters</h2>
 
       <div className="mb-6">
-        <h3 className="mb-2 font-medium">Category</h3>
+        <h3 className="mb-2 font-semibold">Category</h3>
         <div className="flex flex-col gap-2">
           {categories.map((cat) => (
             <label
@@ -41,7 +41,7 @@ export default function Sidebar({
       </div>
 
       <div>
-        <h3 className="mb-2 font-medium">Price</h3>
+        <h3 className="mb-2 font-semibold">Price</h3>
         <input
           type="range"
           min={0}
@@ -53,7 +53,7 @@ export default function Sidebar({
         />
         <div className="mt-1 flex justify-between text-xs">
           <span>0</span>
-          <span>{maxPrice}</span>
+          <span>1000</span>
         </div>
       </div>
     </aside>

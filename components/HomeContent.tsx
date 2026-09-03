@@ -47,7 +47,7 @@ export default function HomeContent() {
         }
       />
       <div className="flex flex-1 flex-col gap-4">
-        <h1 className="text-2xl font-bold text-blue-900">Product Listing</h1>
+       <h1 className="text-3xl font-bold text-blue-800">Product Listing</h1>
         <ProductGrid products={filteredProducts} />
       </div>
     </div>

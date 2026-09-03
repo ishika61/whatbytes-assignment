@@ -26,7 +26,7 @@ export default function ProductCard({ product }: { product: Product }) {
       <p className="mb-3 mt-1 font-bold text-gray-900">${product.price}</p>
       <button
         onClick={() => addToCart(product)}
-        className="mt-auto rounded-md bg-blue-700 py-2 text-sm font-medium text-white transition hover:bg-blue-800"
+className="mt-auto rounded-md bg-[#005FBB] py-2 text-sm font-medium text-white transition hover:bg-[#004a92]"
       >
         Add to Cart
       </button>

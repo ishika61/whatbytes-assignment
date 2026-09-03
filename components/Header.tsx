@@ -2,15 +2,20 @@
 
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { Search, ShoppingCart, User } from "lucide-react";
+import { Search, ShoppingCart } from "lucide-react";
 import { useCart } from "@/context/CartContext";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { totalItems } = useCart();
   const [search, setSearch] = useState(searchParams.get("q") ?? "");
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const handleSearchChange = (value: string) => {
     setSearch(value);
@@ -24,9 +29,9 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-20 flex items-center justify-between gap-4 border-b border-gray-200 bg-white px-6 py-3">
-      <Link href="/" className="text-xl font-bold text-blue-900 shrink-0">
-        ShopEase
+ <header className="sticky top-0 z-20 flex items-center justify-between gap-4 bg-[#0657A8] px-6 py-4">
+      <Link href="/" className="text-2xl font-bold text-white shrink-0">
+        Logo
       </Link>
 
       <div className="relative w-full max-w-md">
@@ -39,23 +44,22 @@ export default function Header() {
           value={search}
           onChange={(e) => handleSearchChange(e.target.value)}
           placeholder="Search products..."
-          className="w-full rounded-full border border-gray-300 py-2 pl-10 pr-4 text-sm focus:border-blue-600 focus:outline-none"
+          className="w-full rounded-full border-0 bg-white py-2 pl-10 pr-4 text-sm text-gray-700 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
       </div>
 
-      <div className="flex items-center gap-4 shrink-0">
-        <Link href="/cart" className="relative">
-          <ShoppingCart className="text-gray-700" size={24} />
-          {totalItems > 0 && (
-            <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-blue-700 text-xs font-semibold text-white">
-              {totalItems}
-            </span>
-          )}
-        </Link>
-        <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-200">
-          <User size={18} className="text-gray-600" />
-        </div>
-      </div>
+      <Link
+        href="/cart"
+        className="relative flex shrink-0 items-center gap-2 rounded-md bg-[#002A5A] px-4 py-2 text-sm font-medium text-white hover:bg-[#003c7a]"
+    >
+        <ShoppingCart size={16} />
+        Cart
+        {mounted && totalItems > 0 && (
+          <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs font-semibold text-white">
+            {totalItems}
+          </span>
+        )}
+      </Link>
     </header>
   );
 }

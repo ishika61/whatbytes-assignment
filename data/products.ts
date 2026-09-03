@@ -6,7 +6,8 @@ export const products: Product[] = [
     title: "Running Shoes",
     price: 99,
     category: "Clothing",
-    image: "https://placehold.co/400x400/1e293b/ffffff?text=Running+Shoes",
+    image:
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop&auto=format",
     rating: 4,
     description:
       "Lightweight running shoes designed for comfort and performance on every run.",
@@ -16,7 +17,8 @@ export const products: Product[] = [
     title: "Wireless Headphones",
     price: 149,
     category: "Electronics",
-    image: "https://placehold.co/400x400/1e293b/ffffff?text=Headphones",
+    image:
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop&auto=format",
     rating: 5,
     description:
       "Over-ear wireless headphones with noise cancellation and long battery life.",
@@ -26,7 +28,8 @@ export const products: Product[] = [
     title: "Backpack",
     price: 129,
     category: "Home",
-    image: "https://placehold.co/400x400/1e293b/ffffff?text=Backpack",
+    image:
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop&auto=format",
     rating: 4,
     description:
       "Durable everyday backpack with padded laptop compartment and multiple pockets.",
@@ -36,7 +39,8 @@ export const products: Product[] = [
     title: "Smartwatch",
     price: 249,
     category: "Electronics",
-    image: "https://placehold.co/400x400/1e293b/ffffff?text=Smartwatch",
+    image:
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop&auto=format",
     rating: 4,
     description:
       "Track your fitness, heart rate, and notifications right from your wrist.",
@@ -46,7 +50,8 @@ export const products: Product[] = [
     title: "Sunglasses",
     price: 149,
     category: "Clothing",
-    image: "https://placehold.co/400x400/1e293b/ffffff?text=Sunglasses",
+    image:
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=400&fit=crop&auto=format",
     rating: 3,
     description: "UV-protected polarized sunglasses with a classic frame.",
   },
@@ -55,7 +60,8 @@ export const products: Product[] = [
     title: "Digital Camera",
     price: 499,
     category: "Electronics",
-    image: "https://placehold.co/400x400/1e293b/ffffff?text=Camera",
+    image:
+      "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&h=400&fit=crop&auto=format",
     rating: 5,
     description:
       "High resolution digital camera with interchangeable lenses for professionals.",
@@ -65,7 +71,8 @@ export const products: Product[] = [
     title: "T-shirt",
     price: 29,
     category: "Clothing",
-    image: "https://placehold.co/400x400/1e293b/ffffff?text=T-shirt",
+    image:
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop&auto=format",
     rating: 4,
     description: "Soft, breathable cotton t-shirt available in multiple colors.",
   },
@@ -74,7 +81,8 @@ export const products: Product[] = [
     title: "Smartphone",
     price: 699,
     category: "Electronics",
-    image: "https://placehold.co/400x600/1e293b/ffffff?text=Smartphone",
+    image:
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=600&fit=crop&auto=format",
     rating: 4,
     description:
       "Lorem ipsum dolor amet, conssectetur euisagend. A powerful smartphone with a stunning display and all-day battery.",
