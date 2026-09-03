@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { Search, ShoppingCart } from "lucide-react";
+import { Search, ShoppingCart, User } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { useEffect, useState } from "react";
 
@@ -48,18 +48,26 @@ export default function Header() {
         />
       </div>
 
-      <Link
-        href="/cart"
-        className="relative flex shrink-0 items-center gap-2 rounded-md bg-[#002A5A] px-4 py-2 text-sm font-medium text-white hover:bg-[#003c7a]"
-    >
-        <ShoppingCart size={16} />
-        Cart
-        {mounted && totalItems > 0 && (
-          <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs font-semibold text-white">
-            {totalItems}
-          </span>
-        )}
-      </Link>
+
+
+
+            <div className="flex shrink-0 items-center gap-3">
+        <Link
+          href="/cart"
+          className="relative flex items-center gap-2 rounded-md bg-[#002A5A] px-4 py-2 text-sm font-medium text-white hover:bg-[#003c7a]"
+        >
+          <ShoppingCart size={16} />
+          Cart
+          {mounted && totalItems > 0 && (
+            <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs font-semibold text-white">
+              {totalItems}
+            </span>
+          )}
+        </Link>
+        <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white">
+          <User size={18} className="text-[#0657A8]" />
+        </div>
+      </div>
     </header>
   );
 }

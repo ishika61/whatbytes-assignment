@@ -88,4 +88,62 @@ export const products: Product[] = [
       "Lorem ipsum dolor amet, conssectetur euisagend. A powerful smartphone with a stunning display and all-day battery.",
     featured: true,
   },
+
+
+
+
+  {
+    id: "laptop",
+    title: "Laptop",
+    price: 899,
+    category: "Electronics",
+    image:
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop&auto=format",
+    rating: 5,
+    description:
+      "Powerful laptop with fast processor, ample storage, and all-day battery life.",
+  },
+  {
+    id: "coffee-mug",
+    title: "Coffee Mug",
+    price: 15,
+    category: "Home",
+    image:
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=400&fit=crop&auto=format",
+    rating: 4,
+    description: "Ceramic coffee mug, dishwasher and microwave safe.",
+  },
+  {
+    id: "desk-lamp",
+    title: "Desk Lamp",
+    price: 39,
+    category: "Home",
+    image:
+      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=400&h=400&fit=crop&auto=format",
+    rating: 4,
+    description: "Adjustable LED desk lamp with three brightness settings.",
+  },
+  {
+    id: "jeans",
+    title: "Jeans",
+    price: 59,
+    category: "Clothing",
+    image:
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=400&fit=crop&auto=format",
+    rating: 4,
+    description: "Classic straight-fit denim jeans, durable and comfortable.",
+  },
+  {
+    id: "bluetooth-speaker",
+    title: "Bluetooth Speaker",
+    price: 79,
+    category: "Electronics",
+    image:
+      "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=400&fit=crop&auto=format",
+    rating: 5,
+    description: "Portable waterproof speaker with rich bass and 12-hour battery.",
+  },
+
+
+
 ];
