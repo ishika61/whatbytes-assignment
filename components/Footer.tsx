@@ -47,15 +47,15 @@ export default function Footer() {
         <div>
           <h4 className="mb-3 font-semibold">Follow Us</h4>
           <div className="flex gap-3">
-            <a href="#" className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-800">
-              <FacebookIcon />
-            </a>
-            <a href="#" className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-800">
-              <TwitterIcon />
-            </a>
-            <a href="#" className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-800">
-              <InstagramIcon />
-            </a>
+           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-800">
+  <FacebookIcon />
+</a>
+<a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-800">
+  <TwitterIcon />
+</a>
+<a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-800">
+  <InstagramIcon />
+</a>
           </div>
         </div>
       </div>
